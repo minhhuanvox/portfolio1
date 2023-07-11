@@ -84,7 +84,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('https://github.com/minhhuanvox/portfolio/blob/716503a8aac29163c17f0b905f0d14bdf27ea218/images/Portfolio.png') no-repeat;
+    background: url('/images/Portfolio.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
