@@ -84,7 +84,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('./images/Portfolio.png') no-repeat;
+    background: url('../images/Portfolio.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -878,6 +878,9 @@ section:nth-child(odd) .animate.scroll{
         margin-top: 2rem;
         text-align: center;
     }
+    .home{
+        background: var(--bg-color);
+    }
 }
 
 @media(max-width: 376px) {
@@ -894,6 +897,9 @@ section:nth-child(odd) .animate.scroll{
 
     .home-content h1 {
         font-size: 5rem;
+    }
+    .home{
+        background: var(--bg-color);
     }
 }
 
