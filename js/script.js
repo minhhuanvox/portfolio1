@@ -18,7 +18,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
+        if (top >= offset && top < offset + height) {
             // active navbar links
             navLinks.forEach(links => {
                 links.classList.remove('active');
@@ -28,7 +28,7 @@ window.onscroll = () => {
             sec.classList.add('show-animate');
         }
         // if want to use animation that repeats on scroll use this
-        else{
+        else {
             sec.classList.remove('show-animate');
         }
     });
@@ -45,5 +45,25 @@ window.onscroll = () => {
     // animation footer on scroll
     let footer = document.querySelector('footer');
 
-    footer.classList.toggle('show-animate', this.innerHeight + this. screenY >= document.scrollingElement.scrollHeight);
+    footer.classList.toggle('show-animate', this.innerHeight + this.screenY >= document.scrollingElement.scrollHeight);
 }
+// Ngăn chặn sự kiện mặc định khi người dùng nhấn phím Ctrl+U
+document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault(); // Ngăn chặn sự kiện mặc định
+    }
+});
+// Lấy tham chiếu đến nút tải xuống
+const downloadButton = document.getElementById('downloadButton');
+
+// Đăng ký sự kiện click cho nút tải xuống
+downloadButton.addEventListener('click', () => {
+    // Đường dẫn đến tệp tin cần tải xuống
+    const fileUrl = './files/Front-endCV.pdf';
+
+    // Tạo một phần tử a (link) ẩn để tải xuống tệp tin
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'Front-End_VoMinhHuan.pdf'; // Tên tệp tin mà người dùng sẽ nhìn thấy khi tải xuống
+    link.click();
+});
