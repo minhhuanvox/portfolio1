@@ -20,12 +20,12 @@
 <body>
     <!-- header đesign -->
     <header class="header">
-        <a href="" class="logo">Minh Huan.<span class="animate" style="--i:1;"></span></a>
+        <a href="" class="logo" langKey="logo">Minh Huan.<span class="animate" style="--i:1;"></span></a>
 
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" class="active" langKey="home">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
@@ -34,6 +34,10 @@
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
         </nav>
+        <div style="text-align: right;">
+            <a href="#" id="lang-en" onclick="switchLanguage('en')"><img width="32" src="/images/united-kingdom.png" /></a>
+            <a href="#" id="lang-vi" onclick="switchLanguage('vi')"><img width="32" src="/images/vietnam.png" /></a>
+        </div>
     </header>
 
     <!-- home section design -->
@@ -82,10 +86,14 @@
 
         <div class="about-content">
             <h3>Web Developer!<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107 of the Copyright
-                Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting,
-                teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might
-                otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
+            <p>I am a final-year student aspiring to become a full-stack programmer. With a passion for coding, I have
+                dedicated my time and efforts to learn various programming languages and frameworks. Throughout my
+                academic journey, I have gained practical experience by working on several projects, which have
+                sharpened my problem-solving and analytical skills. I am proficient in front-end development, including
+                HTML, CSS, and JavaScript, and have also gained knowledge in back-end technologies like Python and
+                databases. As a highly motivated individual, I constantly seek opportunities to enhance my skills and
+                stay updated with the latest industry trends. My ultimate goal is to contribute to the development of
+                innovative and user-friendly web applications as a professional full-stack developer.
                 <span class="animate scroll" style="--i:4;"></span>
             </p>
             <div class="btn-box btns">
@@ -110,11 +118,12 @@
                             </div>
                             <h3>Saigon University</h3>
                             <h1>Major: Software Engineering</h1>
-                            <p>Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107
-                                of the Copyright Act 1976, allowance is made for "fair use" for purposes such as
-                                criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a
-                                use permitted by copyright statute that might otherwise be infringing. Non-profit,
-                                educational or personal use tips the balance in favor of fair use.</p>
+                            <p>During my university studies in Software Engineering, I have gained a strong foundation
+                                in web development. I have acquired knowledge in HTML, CSS, JavaScript, and various
+                                frameworks. Additionally, I have learned about database management and back-end
+                                technologies like PHP and Java. These skills have equipped me to excel as a web
+                                developer, enabling me to create dynamic and interactive websites with efficient
+                                functionality.</p>
                         </div>
                     </div>
 
@@ -156,14 +165,16 @@
                     <div class="education-content">
                         <div class="content">
                             <div class="year">
-                                <i class='bx bxs-calendar'>9/2019 - Now</i>
+                                <i class='bx bxs-calendar'>6/2023 - 8/2023</i>
                             </div>
-                            <h3>Web Developer - Company</h3>
-                            <p>Disclaimer video is for educational purpose only. Copyright Disclaimer Under Section 107
-                                of the Copyright Act 1976, allowance is made for "fair use" for purposes such as
-                                criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a
-                                use permitted by copyright statute that might otherwise be infringing. Non-profit,
-                                educational or personal use tips the balance in favor of fair use.</p>
+                            <h3>Web Developer Intern - Transcom</h3>
+                            <p>During my internship at Transcom, I honed my skills as a web developer. I gained
+                                experience in front-end technologies like HTML, CSS, and JavaScript, and worked with
+                                frameworks such as React and Angular. I also collaborated with a team, implementing
+                                responsive designs and ensuring cross-browser compatibility. Additionally, I gained
+                                exposure to version control systems like Git and learned about agile development
+                                methodologies. This internship has provided me with practical experience and a solid
+                                foundation to excel as a web development intern.</p>
                         </div>
                     </div>
 
@@ -331,6 +342,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 
 </html>

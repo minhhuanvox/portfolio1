@@ -53,6 +53,11 @@ document.addEventListener('keydown', function (event) {
         event.preventDefault(); // Ngăn chặn sự kiện mặc định
     }
 });
+// Ngăn chặn nhấn chuột phải để xem mã nguồn
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
 // Lấy tham chiếu đến nút tải xuống
 const downloadButton = document.getElementById('downloadButton');
 
