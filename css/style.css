@@ -12,7 +12,8 @@
 }
 
 :root {
-    --bg-color: #081b29;
+    --bg-color: linear-gradient(to bottom, #658092, #112e42, #081b29);
+    /* --bg-color: 081b29; */
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;

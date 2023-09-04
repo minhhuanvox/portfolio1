@@ -64,11 +64,11 @@ const downloadButton = document.getElementById('downloadButton');
 // Đăng ký sự kiện click cho nút tải xuống
 downloadButton.addEventListener('click', () => {
     // Đường dẫn đến tệp tin cần tải xuống
-    const fileUrl = './files/Front-endCV.pdf';
+    const fileUrl = './files/VoMinhHuan_WebDeveloperIntern.pdf';
 
     // Tạo một phần tử a (link) ẩn để tải xuống tệp tin
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'Front-End_VoMinhHuan.pdf'; // Tên tệp tin mà người dùng sẽ nhìn thấy khi tải xuống
+    link.download = 'VoMinhHuan_WebDeveloperIntern.pdf'; // Tên tệp tin mà người dùng sẽ nhìn thấy khi tải xuống
     link.click();
 });
