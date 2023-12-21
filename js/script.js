@@ -72,3 +72,16 @@ downloadButton.addEventListener('click', () => {
     link.download = 'VoMinhHuan_WebDeveloperIntern.pdf'; // Tên tệp tin mà người dùng sẽ nhìn thấy khi tải xuống
     link.click();
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('toggleBtn');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+
+        // Thay đổi icon khi chuyển đổi giữa light và dark mode
+        const icon = toggleBtn.querySelector('i');
+        icon.classList.toggle('fa-sun');
+        icon.classList.toggle('fa-lightbulb');
+    });
+});

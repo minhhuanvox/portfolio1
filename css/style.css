@@ -442,6 +442,26 @@ span {
     padding-top: .5rem;
 }
 
+.education-content .content ul {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    list-style-type: none; /* Ẩn dấu hiệu (bullet) mặc định */
+    padding: 0; /* Đặt giá trị padding về 0 để loại bỏ khoảng trắng giữa các mục */
+}
+.education-content .content ul li {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    text-indent: 2rem; /* Độ lệch đầu dòng (tuỳ chọn) */
+    margin-bottom: .5rem; /* Khoảng cách giữa các mục (tuỳ chọn) */
+}
+
+.education-content P{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
