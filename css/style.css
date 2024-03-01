@@ -959,6 +959,26 @@ section:nth-child(odd) .animate.scroll {
     }
 }
 
+@media(max-height: 376px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home {
+        background: var(--bg-color);
+    }
+}
 /* KEYFRAMES ANIMATION */
 @keyframes homeBgText {
 
